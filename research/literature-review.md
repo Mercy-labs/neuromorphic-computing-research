@@ -47,3 +47,41 @@ The findings also caution against assuming that every alternative architecture w
 Davies, M., et al. (2021). Advancing neuromorphic computing with Loihi: A survey of results and outlook. Proceedings of the IEEE.
 
 DOI: https://doi.org/10.1109/JPROC.2021.3067593
+
+
+### Paper 2: Managing Burstiness and Scalability in Event-Driven Models on the SpiNNaker Neuromimetic System
+
+Authors: Rast et al.
+
+Year: 2012 (published online in 2011)
+
+#### Research Focus
+
+This paper investigates the performance and scalability of event-driven neural simulations on the SpiNNaker architecture.
+
+#### Architecture
+
+SpiNNaker uses a parallel multiprocessor architecture with asynchronous, event-driven communication. Neural events are transmitted as packets between processors.
+
+#### Key Findings
+
+- Event-driven neural simulation can support large-scale neural models.
+- Network traffic patterns, spatial locality, and temporal relationships affect performance.
+- Bursty event traffic can create processor congestion and communication challenges.
+- Effective event handling and network mapping are important for scalability.
+
+#### Limitations and Research Considerations
+
+The results highlight the importance of communication overhead and traffic management. Performance depends on the workload and how neural models are mapped onto the hardware.
+
+#### Relevance to This Project
+
+This paper helps investigate a key question: can event-driven computation reduce unnecessary work while avoiding excessive communication overhead?
+
+It also provides a comparison point for other neuromorphic architectures, including Loihi.
+
+#### Source
+
+Rast, A. D., et al. (2012). Managing burstiness and scalability in event-driven models on the SpiNNaker neuromimetic system. International Journal of Parallel Programming, 40, 553–582.
+
+DOI: https://doi.org/10.1007/s10766-011-0180-7
