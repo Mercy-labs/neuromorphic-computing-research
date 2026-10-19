@@ -1,53 +1,49 @@
 
-# Literature Review: Neuromorphic Computing
-
-## 1. Purpose
-
-This review examines existing research on neuromorphic computing, event-driven computation, and alternative computational architectures.
-
-The goal is to understand established approaches, their demonstrated strengths, their limitations, and potential opportunities for further investigation.
-
-## 2. Foundational Research
-
 ### Paper 1: Advancing Neuromorphic Computing With Loihi: A Survey of Results and Outlook
 
-Authors: Davies et al.
+Authors: Mike Davies et al.
 
 Year: 2021
 
-Research questions:
-- What computational capabilities does Intel's Loihi neuromorphic research platform support?
-- What results and limitations have researchers reported?
+Publication: Proceedings of the IEEE
 
-Key findings:
-- To be completed after reading the paper.
+#### Research Focus
 
-Limitations and open questions:
-- To be completed after reading the paper.
+This paper surveys Intel's Loihi neuromorphic research processor, its architecture, experimental results, applications, and future research opportunities.
 
-Source:
-https://doi.org/10.1109/JPROC.2021.3067593
+#### Architecture
 
-## 3. Architecture Comparison
+Loihi supports spiking neural networks through neuromorphic cores, neuron and synapse state, and event-based communication. Its design aims to exploit sparse activity and temporal information while supporting computation distributed across processing cores.
 
-Compare conventional von Neumann systems, conventional neural-network accelerators, and neuromorphic systems.
+#### Key Findings
 
-Investigate:
-- How computation is triggered.
-- How memory and processing are organized.
-- How activity and data movement affect energy use.
-- Which workloads each architecture supports well.
+- Neuromorphic computing can offer substantial efficiency advantages for particular workloads.
+- Performance depends on the algorithm, network architecture, activity patterns, hardware implementation, and baseline used for comparison.
+- Some reported experiments demonstrate promising energy or latency advantages, but those results cannot automatically be generalized to all applications.
+- Conventional feedforward neural networks do not necessarily benefit as much as architectures specifically designed to exploit neuromorphic hardware.
 
-## 4. Research Gaps
+#### Limitations and Research Considerations
 
-Do not claim a research gap until multiple relevant papers have been examined.
+- Neuromorphic systems are not universally superior to conventional processors.
+- Latency, throughput, network scale, communication overhead, and workload characteristics can affect the outcome.
+- Comparisons must account for the hardware, software, and measurement methods used.
+- Results from one platform or task should not be treated as proof of general superiority.
 
-For each possible gap, record:
-- What existing work has already established.
-- What remains unresolved.
-- Why the problem matters.
-- How it could be tested experimentally.
+#### Relevance to This Project
 
-## 5. References
+This paper supports investigating the conditions under which event-driven computation is beneficial. It suggests that future experiments should examine computational cost, data movement, latency, and task performance together rather than treating energy efficiency as the only measure.
 
-Add complete bibliographic references for every paper reviewed.
+The findings also caution against assuming that every alternative architecture will outperform conventional neural networks.
+
+#### Follow-up Questions
+
+- Which workload characteristics make event-driven computation advantageous?
+- How much overhead is introduced by communication and state management?
+- Can the benefits of sparse computation be retained as the workload scales?
+- How should experiments compare neuromorphic and conventional architectures fairly?
+
+#### Source
+
+Davies, M., et al. (2021). Advancing neuromorphic computing with Loihi: A survey of results and outlook. Proceedings of the IEEE.
+
+DOI: https://doi.org/10.1109/JPROC.2021.3067593
